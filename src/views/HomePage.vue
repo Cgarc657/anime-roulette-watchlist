@@ -1,5 +1,5 @@
 <script setup>
-const spin = () => alert{'Hello'}
+const spin = () => alert('Hello')
 </script>
 
 <template>
