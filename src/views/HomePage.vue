@@ -1,6 +1,14 @@
 <script setup>
+import { ref } from 'vue'
 import AnimeCard from '@/components/AnimeCard.vue'
-console.log('Hello')
+
+const loading = ref(false)
+const error = ref('')
+
+const spin = () => {
+  if (error.value.length > 0) error.value = ''
+  else error.value = 'Something wrong'
+}
 </script>
 
 <template>
@@ -38,7 +46,10 @@ console.log('Hello')
               </button>
             </div>
           </div>
-          <AnimeCard loading />
+          <AnimeCard
+            :loading="loading"
+            :error="error"
+          />
         </section>
       </div>
     </div>
