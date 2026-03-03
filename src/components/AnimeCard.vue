@@ -64,9 +64,9 @@ watch(
       v-if="props.loading"
       class="space-y-4"
     >
-      <div class="flex items-center gap-3 text-cyan-300">
+      <div class="flex items-center gap-3 text-blue-400">
         <div
-          class="h-5 w-5 animate-spin rounded-full border-2 border-cyan-400 border-t-transparent"
+          class="h-5 w-5 animate-spin rounded-full border-2 border-blue-500 border-t-transparent"
         ></div>
         <p class="font-semibold tracking-wide">Shuffling anime reels...</p>
       </div>
@@ -110,10 +110,10 @@ watch(
       <div>
         <h2 class="text-2xl font-black text-white">{{ anime.title }}</h2>
         <p class="mt-1 text-sm text-slate-300">
-          Score: <span class="font-semibold text-amber-300">{{ anime.score ?? 'N/A' }}</span> ·
+          Score: <span class="font-semibold text-yellow-400">{{ anime.score ?? 'N/A' }}</span> ·
           Episodes:
-          <span class="font-semibold text-cyan-300">{{ anime.episodes ?? 'Unknown' }}</span> ·
-          Rating: <span class="font-semibold text-pink-300">{{ anime.rating || 'Unknown' }}</span>
+          <span class="font-semibold text-blue-400">{{ anime.episodes ?? 'Unknown' }}</span> ·
+          Rating: <span class="font-semibold text-orange-400">{{ anime.rating || 'Unknown' }}</span>
         </p>
       </div>
 
@@ -132,7 +132,7 @@ watch(
       <div class="flex flex-wrap gap-3">
         <button
           type="button"
-          class="rounded-full border border-cyan-300/60 bg-cyan-400/15 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/25 disabled:cursor-not-allowed disabled:opacity-50"
+          class="rounded-full border border-orange-400 bg-orange-500/20 px-4 py-2 text-sm font-semibold text-orange-300 shadow-lg shadow-orange-500/30 transition hover:scale-105 hover:bg-orange-500/30 disabled:cursor-not-allowed disabled:opacity-50"
           :disabled="inWatchlist"
           @click="emit('add', anime)"
         >

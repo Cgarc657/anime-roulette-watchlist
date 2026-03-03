@@ -62,7 +62,7 @@ const emit = defineEmits(['remove'])
                 :href="item.url"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-xs font-semibold text-cyan-300 hover:underline"
+                class="text-xs font-semibold text-blue-400 hover:underline"
               >
                 MAL Link
               </a>

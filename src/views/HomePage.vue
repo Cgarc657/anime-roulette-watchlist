@@ -33,7 +33,7 @@ const spinLabel = computed(() => {
 
 <template>
   <main
-    class="min-h-screen bg-[radial-gradient(circle_at_15%_20%,#334155,transparent_40%),radial-gradient(circle_at_85%_0%,#0f766e,transparent_28%),linear-gradient(160deg,#020617,#0f172a,#111827)] px-4 py-8 text-slate-100 sm:px-6 lg:px-8"
+    class="min-h-screen bg-[radial-gradient(circle_at_20%_20%,#1e3a8a,transparent_40%),radial-gradient(circle_at_80%_10%,#ea580c,transparent_30%),linear-gradient(160deg,#000000,#111827,#1f2937)] px-4 py-8 text-slate-100 sm:px-6 lg:px-8"
   >
     <div class="mx-auto max-w-7xl">
       <header class="mb-8">
@@ -60,7 +60,7 @@ const spinLabel = computed(() => {
               <button
                 type="button"
                 :disabled="spinDisabled"
-                class="cursor-pointer rounded-full border border-cyan-300/70 bg-cyan-400/20 px-6 py-3 text-base font-black tracking-wide text-cyan-100 hover:bg-cyan-400/30 disabled:cursor-not-allowed disabled:opacity-60"
+                class="cursor-pointer rounded-full border border-orange-400 bg-orange-500 px-6 py-3 text-base font-black tracking-wide text-white transition hover:scale-105 hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-60"
                 @click="spin"
               >
                 {{ spinLabel }}
@@ -68,7 +68,7 @@ const spinLabel = computed(() => {
             </div>
             <p
               v-if="cooldownLeft > 0"
-              class="mt-4 rounded-xl border border-amber-300/50 bg-amber-400/10 px-3 py-2 text-sm font-semibold text-amber-100"
+              class="mt-4 rounded-xl border border-yellow-400/60 bg-yellow-500/10 text-yellow-300"
             >
               Rate-limited. Try again in {{ cooldownLeft }}s.
             </p>
